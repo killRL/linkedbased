@@ -1,0 +1,253 @@
+{
+    "Title": "Zero",
+    "Credits": "Created by Nick Di Lorenzo (ndiloren@ucsc.edu).",
+    "InitialLocation": "Zero",
+    "Locations": {
+        "Zero": {
+            "Body": "You suddenly find yourself in the midst of battle, an all out war rages on. A powerful demon confronts you wielding a 2 handed greatsword and demonic platearmor.",
+            "Choices": [
+                {
+                    "Text": "Engulf the demon in flames.",
+                    "Target": "Flames"
+                },
+                {
+                    "Text": "Drown the demon in a mini tsunami.",
+                    "Target": "Tsunami"
+                },
+                {
+                    "Text": "Drop a boulder on the demon.",
+                    "Target": "Boulder"
+                },
+                {
+                    "Text": "Fly up holding the demon and drop him.",
+                    "Target": "Icarus"
+                }
+            ]
+        },
+        "Flames": {
+            "Body": "You form fire from your wrist, holding it over their leader. Before you know it, nothing but ashes remain",
+            "Choices": [
+                {
+                    "Text": "Continue to the top of the tower.",
+                    "Target": "Tower"
+                }
+            ]
+        },
+        "Tsunami": {
+            "Body": "You form a ball of water from your wrist, holding it over their leader. Before you know it, the demon lays limp on the ground before you.",
+            "Choices": [
+                {
+                    "Text": "Continue to the top of the tower.",
+                    "Target": "Tower"
+                }
+            ]
+        },
+        "Boulder": {
+            "Body": "You raise both hands to the sky and mold a giant boulder, holding it over their leader. Before you know it, nothing but a lone rock stands before you anymore.",
+            "Choices": [
+                {
+                    "Text": "Continue to the top of the tower.",
+                    "Target": "Tower"
+                }
+            ]
+        },
+        "Icarus": {
+            "Body": "You grab the demon by the hand and fly up with godspeed, flying higher and higher until you surpass the clouds. As you descend, you see the demon laying limp on the ground below",
+            "Choices": [
+                {
+                    "Text": "Continue to the top of the tower.",
+                    "Target": "Tower"
+                }
+            ]
+        },
+        "Tower": {
+            "Body": "You walk inside the massive doors, and you enter into a grand castle with tiny demons scurrying about. They look miniscule compared to the large decorations and high vaulted ceilings.",
+            "Choices": [
+                {
+                    "Text": "Enter the main hallway.",
+                    "Target": "Main"
+                }
+            ]
+        },
+        "Main": {
+            "Body": "As you enter the main hall, you see several different passages and doorways leading to various rooms within the castle.",
+            "Choices": [
+                {
+                    "Text": "Enter the kitchen.",
+                    "Target": "Kitchen"
+                },
+                {
+                    "Text": "Enter the library.",
+                    "Target": "Library"
+                },
+                {
+                    "Text": "Enter the barracks.",
+                    "Target": "Barracks"
+                },
+                {
+                    "Text": "Enter the dining hall.",
+                    "Target": "Dining"
+                },
+                {
+                    "Text": "Enter the wine cellar.",
+                    "Target": "Cellar"
+                },
+                {
+                    "Text": "Enter the garden.",
+                    "Target": "Garden"
+                }
+            ]
+        },
+        "Kitchen": {
+            "Body": " The kitchen boasts an impressive array of shelving, laden with barrels of grains, sacks of flour, and crates of freshly caught fish. Nothing seems out of the ordinary, so you conclude that what you're looking for isn't here.",
+            "Choices": [
+                {
+                    "Text": "Go back.",
+                    "Target": "Main"
+                }
+            ]
+        },
+        "Library": {
+            "Body": "As you shuffle through a perfect arrangment of books along a bookshelf, you notice one of them is slightly tilted outwards. ",
+            "Choices": [
+                {
+                    "Text": "Take the book out",
+                    "Target": "Staircase"
+                }
+            ]
+        },
+        "Barracks": {
+            "Body": "The walls are adorned with weapon racks, shields, and armor displays, creating an aura of martial readiness. Nothing seems out of the ordinary, so you conclude that what you're looking for isn't here.",
+            "Choices": [
+                {
+                    "Text": "Go back.",
+                    "Target": "Main"
+                }
+            ]
+        },
+        "Dining": {
+            "Body": "Running down the center of the hall are long, heavy wooden tables polished to a high sheen. Nothing seems out of the ordinary, so you conclude that what you're looking for isn't here.",
+            "Choices": [
+                {
+                    "Text": "Go back.",
+                    "Target": "Main"
+                }
+            ]
+        },
+        "Cellar": {
+            "Body": "Along the walls, rows of sturdy wooden racks are lined with dusty wine bottles, each carefully labeled to indicate the year, vineyard, and varietal. Nothing seems out of the ordinary, so you conclude that what you're looking for isn't here.",
+            "Choices": [
+                {
+                    "Text": "Pour a jug of wine.",
+                    "Target": "Wine"
+                },
+                {
+                    "Text": "Go back.",
+                    "Target": "Main"
+                }
+            ]
+        },
+        "Wine": {
+            "Body": "The wine has been preserved to uphold the best quality, offering a transcendent tasting experience.",
+            "Choices": [
+                {
+                    "Text": "Drink it and go back.",
+                    "Target": "Main"
+                }
+            ]
+        },
+        "Garden": {
+            "Body": "The garden is populated by sinister, otherworldly flora. You notice a key lying on a pedestal beneath an array of razor-sharp thorns. ",
+            "Choices": [
+                {
+                    "Text": "Take the key and go back.",
+                    "Action":"TakeKey",
+                    "Target": "Main"
+                }
+            ]
+        },
+        "Staircase": {
+            "Body": "As you walk down the steps, Piles of gold and treasure are scattered along the edges of the room, with a massive red carpet that leads to a ginormous doorway",
+            "Choices": [
+                {  
+                    "Requirement":"KeyTaken",
+                    "Text": "Use the key.",
+                    "Target": "Throne"
+                },
+                {
+                    "Text": "Go back.",
+                    "Target": "Main"
+                }
+            ]
+        },
+        "Throne": {
+            "Body": "Sitting at the very top of the throne sits a demon you have never seen the likes of, carrying a bloodstained battleaxe. ",
+            "Choices": [
+                {  
+                    "Text": "Blast a fireball towards him.",
+                    "Target": "Fireball"
+                },
+                {
+                    "Text": "Summon a massive typhoon and send it towards him.",
+                    "Target": "Typhoon"
+                },
+                {  
+                    "Text": "Whip up a tornado and push it his way.",
+                    "Target": "Tornado"
+                },
+                {
+                    "Text": "Conjure massive spikes from the floor beneath him.",
+                    "Target": "Spikes"
+                }
+            ]
+        },
+        "Fireball": {
+            "Body": "You sent a fireball so powerful that it even burns your fingertips a little bit. ",
+            "Choices": [
+                {
+                    "Text": "Channel your elemental gift.",
+                    "Target": "Gift"
+                }
+            ]
+        },
+        "Typhoon": {
+            "Body": "You raise a wave that almost touches the ceiling and overarches over the throne. ",
+            "Choices": [
+                {
+                    "Text": "Channel your elemental gift.",
+                    "Target": "Gift"
+                }
+            ]
+        },
+        "Tornado": {
+            "Body": "You summon a tornado that swirls around everything on the floor around you barrels towards him. ",
+            "Choices": [
+                {
+                    "Text": "Channel your elemental gift.",
+                    "Target": "Gift"
+                }
+            ]
+        },
+        "Spikes": {
+            "Body": "You raise several spikes taller than the massive throne he sits on.",
+            "Choices": [
+                {
+                    "Text": "Channel your elemental gift.",
+                    "Target": "Gift"
+                }
+            ]
+        },
+        "Gift": {
+            "Body": "You launch the massive powerful ball of  all 4 elements towards him, an undodgeable force of nature that engulfs the demon king.",
+            "Choices": [
+                {
+                    "Text": "Restore peace to the world.",
+                    "Target": "Peace"
+                }
+            ]
+        },
+        "Peace": {
+            "Body": "After defeating the demon king, balance has been restored and good prevails. For now..."
+        }
+    }
+}
